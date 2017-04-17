@@ -26,11 +26,11 @@ But we're the same folks who built Sails, hence the nautical name.
 
 ## Getting Started with Mast
 
-##Setting up Mast
-###1. Grab the Mast file
+## Setting up Mast
+### 1. Grab the Mast file
 Add the `mast.withDependencies.min.js` file to your project, and make sure you bring it in with a `<script>` tag before the `<script>` tags loading your components (or anything else using Mast). This file contains all of Mast's dependencies, so you don't need to have separate Backbone, jQuery and Underscore files in your application -- it's all there for you.
 
-###2. Raise Mast
+### 2. Raise Mast
 
 In order for Mast to work its magic on your page, you need to `raise` it.  Paste this after all your other scripts:
 
@@ -174,7 +174,7 @@ This time, we used the `count` attribute.  This allows us to inject more than on
 
 
 
-###3. Referencing a common component from more than one place
+### 3. Referencing a common component from more than one place
 
 So I think we should be feeling pretty good, since we've implemented all of the HTML/CSS for the single-page website and type-as-you-go search.  What more could we possibly ask for?  Well, maybe there are parts of your application that you want to re-use in more than one section, but that aren't in *every* section like, for instance, the header & footer in the first example.
 
@@ -209,7 +209,7 @@ And the "Portfolio" template like this:
 ## Making things interactive with Components
 Defining components gives you the power to make things more interactive. A really cool thing about Mast, though, is that it has shortcuts to let you do some of this without writing JavaScript. Here's a quick walkthrough of how to set up components and add some simple interactivity to your app.
 
-###Defining a Component
+### Defining a Component
 To create a component, make a JavaScript file in your app, and give it the same name as the template you want it to work for. Then, paste in the following bit of code, replacing `NameofTemplate` with the template you're using:
 ```javascript
 Mast.define('NameOfTemplate', function() {
@@ -224,7 +224,7 @@ Mast.define('NameOfTemplate', function() {
 Now that you've created the component, it's time to make your app more awesome!
 
 
-###Creating Navigation for a Single-page App
+### Creating Navigation for a Single-page App
 To switch out the content of a region, you will first need to give that region a `data-id`. The `<region>` tag should now look something like this: `<region data-id="content" template="Home"></region>`.
 
 Then, create a component for the template that contains that region.
@@ -249,7 +249,7 @@ Mast.define('Body', function() {
 To navigate to the News section, for example, you can now use `<a href="#news">News</a>`.
 
 
-###Adding/Removing Classes
+### Adding/Removing Classes
 Mast has some simple shorthand for adding, removing, and toggling classes on jQuery events. Here's an example of how that works:
 
 Let's go back to Example 2, where we implemented a list of emails. What if, when the user clicks on an email, you want to make it look different to show that it's been selected? Then, if they click it again, you want it to go back to normal.
@@ -294,7 +294,7 @@ Mast.define('Email', function() {
 });
 ```
 
-####Here is a list of the different shorthand you can use:
+#### Here is a list of the different shorthand you can use:
 | Secret Code      | Action |
 |----------------|-----------|
 | `'+ .class-name'` | Add class |
@@ -442,7 +442,7 @@ Mast also enhances jQuery's DOM events by adding "pressEnter", "pressEscape", an
 
 -->
 
-#The MIT License (MIT)
+# The MIT License (MIT)
 --
 
 Copyright © 2012-2013 Balderdash Design Co.
